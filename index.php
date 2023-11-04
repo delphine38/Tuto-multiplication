@@ -18,19 +18,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="container">
 
-        <form method="post" action="">
-            <label for="multiplication"> Donnez la valeur à multiplier : </label><br>
-            <input type="number" name="valeur"><br>
+<br>
 
-            <input type="submit" name="valider" value="calculer">
+    <div class="card text-center" >
+        <div class="card-header">
+            <h1>Multimix</h1>
+        </div>
+
+        <form method="post" action="" class="form-group">
+
+            <div class="card-body">
+                <label for="multiplication"  class="card-title"> Donnez la valeur à multiplier : </label><br>
+                <input type="number" name="valeur" class="input-group"><br>
+
+                <input type="submit" name="valider" value="calculer" class="btn btn-primary btn-lg btn-block">
+            </div>
+        
         </form>
+    </div>
+
+        
 
         <hr>
 
-        <div>
+<div class="card text-center" >
+<div>
 
             <?php
             if(isset($_POST['valider']))
@@ -49,10 +66,10 @@
 
 
             ?>
-
-
-            <h4>Bravo Bravo l'essai</h4>
         </div>
+</div>
+
+        
     
 </body>
 </html>
